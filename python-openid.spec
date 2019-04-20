@@ -4,7 +4,7 @@
 #
 Name     : python-openid
 Version  : 2.2.5
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/7b/8a/e94d18c666073280b8c0614b7e38cfaf0b129989e42f4ca713942b862f0a/python-openid-2.2.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7b/8a/e94d18c666073280b8c0614b7e38cfaf0b129989e42f4ca713942b862f0a/python-openid-2.2.5.tar.gz
 Summary  : OpenID support for servers and consumers.
