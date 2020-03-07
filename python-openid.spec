@@ -4,10 +4,10 @@
 #
 Name     : python-openid
 Version  : 2.2.5
-Release  : 7
+Release  : 8
 URL      : https://files.pythonhosted.org/packages/7b/8a/e94d18c666073280b8c0614b7e38cfaf0b129989e42f4ca713942b862f0a/python-openid-2.2.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7b/8a/e94d18c666073280b8c0614b7e38cfaf0b129989e42f4ca713942b862f0a/python-openid-2.2.5.tar.gz
-Summary  : Python 3 port of the python2-openid library
+Summary  : OpenID support for servers and consumers.
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: python-openid-license = %{version}-%{release}
@@ -16,15 +16,10 @@ Requires: python-openid-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 
 %description
-Python OpenID library example code
-==================================
-The examples directory contains working code illustrating the use of
-the library for performing OpenID authentication, both as a consumer
-and a server. There are two kinds of examples, one that can run
-without any external dependencies, and one that uses the Django Web
-framework. The examples do not illustrate how to use all of the
-features of the library, but they should be a good starting point to
-see how to use this library with your code.
+the OpenID decentralized identity system in your application.  Want to enable
+        single sign-on for your web site?  Use the openid.consumer package.  Want to
+        run your own OpenID server? Check out openid.server.  Includes example code
+        and support for a variety of storage back-ends.
 
 %package license
 Summary: license components for the python-openid package.
@@ -47,7 +42,7 @@ python components for the python-openid package.
 Summary: python3 components for the python-openid package.
 Group: Default
 Requires: python3-core
-Provides: pypi(python-openid)
+Provides: pypi(python_openid)
 
 %description python3
 python3 components for the python-openid package.
@@ -62,8 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583213746
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583541892
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
